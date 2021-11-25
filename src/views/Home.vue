@@ -1,18 +1,29 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import { ref, reactive, } from 'vue'
 export default {
-  name: 'Home',
+  name: "Home",//组件名称
+  //接收父组件的数据
+  props: {
+
+  },
+  //定义子组件
   components: {
-    HelloWorld
+
+  },
+  setup(props, ctx){
+    return {
+
+    }
   }
+
 }
+
 </script>
+
+<style scoped lang='scss'>
+
+</style>
