@@ -1,5 +1,7 @@
 <template>
-  <router-view/>
+  <div class="main">
+    <router-view/>
+  </div>
 </template>
 
 <style lang="scss">
@@ -10,4 +12,5 @@
   text-align: center;
   color: #2c3e50;
 }
+
 </style>
