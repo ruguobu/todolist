@@ -51,7 +51,6 @@
   </el-table>
 </template>
 <script>
-
 import { ref, reactive, toRefs, onMounted, watch } from "vue";
 export default {
   name: "TodoTable",
@@ -86,16 +85,9 @@ export default {
       }
     };
 
-    // 选择事件
-    const handleSelectionChange = (selection) => {
-      console.log(selection);
-      // TODO selection 转 id数组
-      state.selectedIds = selection.map((item) => item.id);
-    };
 
     return {
       ...toRefs(state),
-      centerDialogVisible: ref(false),
       handleDelete,
       handleEdit,
       handleSelectionChange,
